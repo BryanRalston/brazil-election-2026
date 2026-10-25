@@ -8,6 +8,7 @@ main{max-width:640px;margin:auto;padding:16px}h1{font-size:1.3rem}
 .pct{font-size:2rem;font-weight:700}.f{color:#facc15}.l{color:#f87171}
 .bar{display:flex;height:14px;border-radius:7px;overflow:hidden;margin-top:8px}
 .bar div{height:100%}small,.muted{color:#94a3b8}a{color:#7dd3fc}li{margin:6px 0}
+table{width:100%;border-collapse:collapse;font-size:.88rem}th,td{padding:5px 4px;text-align:right;border-bottom:1px solid #334155}th:first-child,td:first-child{text-align:left}th{cursor:pointer;color:#cbd5e1;white-space:nowrap}tr.reg td{background:#0f172a;font-weight:600;color:#94a3b8;text-align:left}.wf{color:#facc15}.wl{color:#f87171}.scroll{overflow-x:auto}
 </style></head><body><main>
 <h1>🇧🇷 Brazil presidential runoff — Oct 25, 2026</h1>
 <div class="card">
@@ -18,6 +19,8 @@ main{max-width:640px;margin:auto;padding:16px}h1{font-size:1.3rem}
 </div>
 <div class="card"><p><b>Counted:</b> <span id="pc">–</span>% of districts</p><p><b>Winner:</b> <span id="win">–</span></p>
 <p class="muted">Source: <span id="src"></span> (<span id="st"></span>)<br>Snapshot updated: <span id="up"></span><br>Page checked: <span id="chk"></span> · auto-refresh 60s</p><p id="notes" class="muted"></p></div>
+<div class="card"><b>By region</b><div class="scroll"><table id="rt"><thead><tr><th>Region</th><th>% counted</th><th>Flávio</th><th>Lula</th></tr></thead><tbody></tbody></table></div></div>
+<div class="card"><b>By state</b> <small>(tap a header to sort)</small><div class="scroll"><table id="stt"><thead><tr><th data-k="name">State</th><th data-k="pct_counted">% counted</th><th data-k="flavio_pct">Flávio</th><th data-k="lula_pct">Lula</th></tr></thead><tbody></tbody></table></div><small id="ssrc" class="muted"></small></div>
 <div class="card"><b>Key facts</b><ul>
 <li>Polls closed two hours late due to a voting extension.</li>
 <li>Extension ordered by STF Justice Cristiano Zanin — nationwide on paper, but only applied where voting machines were still open at 5 PM Brasília time.</li>
@@ -28,12 +31,23 @@ main{max-width:640px;margin:auto;padding:16px}h1{font-size:1.3rem}
 <li><a href="https://www.theguardian.com/world/ng-interactive/2026/oct/25/brazil-election-2026-live-second-round-results">The Guardian live results (English)</a></li>
 <li><a href="https://oglobo.globo.com/apuracao-eleicoes-2026/noticia/2026/10/25/apuracao-ao-vivo-resultados-do-2o-turno-das-eleicoes-presidenciais-de-2026.ghtml">O Globo apuração ao vivo (Portuguese)</a></li></ul></div>
 </main><script>
+
+let D=null,sk=null,sd=1;const R=["North","Northeast","Center-West","Southeast","South"];
+const p=x=>x==null?'n/a':x.toFixed(2)+'%';
+const cell=(a,b,k)=>`<td class="${a!=null&&b!=null&&(k=='f'?a>b:b>a)?(k=='f'?'wf':'wl'):''}">${p(k=='f'?a:b)}</td>`;
+function rows(list){return list.map(s=>s.unavailable?`<tr><td>${s.uf} · ${s.name}</td><td colspan=3 class="muted">unavailable</td></tr>`:`<tr><td>${s.uf} · ${s.name}</td><td>${p(s.pct_counted)}</td>${cell(s.flavio_pct,s.lula_pct,'f')}${cell(s.flavio_pct,s.lula_pct,'l')}</tr>`).join('')}
+function renderStates(){if(!D||!D.states)return;const tb=document.querySelector('#stt tbody');let st=D.states.slice();
+if(sk){st.sort((a,b)=>{const x=a[sk],y=b[sk];if(x==null)return 1;if(y==null)return -1;return (typeof x=='string'?x.localeCompare(y):x-y)*sd});tb.innerHTML=rows(st)}
+else tb.innerHTML=R.map(r=>`<tr class="reg"><td colspan=4>${r}</td></tr>`+rows(st.filter(s=>s.region==r))).join('');
+document.querySelector('#rt tbody').innerHTML=(D.regions||[]).map(r=>`<tr><td>${r.region}</td><td>${p(r.pct_counted)}</td>${cell(r.flavio_pct,r.lula_pct,'f')}${cell(r.flavio_pct,r.lula_pct,'l')}</tr>`).join('');
+ssrc.textContent='Source: '+(D.states_source||'')+(D.states[0]&&D.states[0].source_time?' · e.g. '+D.states[0].source_time:'');}
+document.querySelectorAll('#stt th').forEach(th=>th.onclick=()=>{const k=th.dataset.k;if(sk==k){sd=-sd;if(sd==1)sk=null}else{sk=k;sd=k=='name'?1:-1}renderStates()});
 const n=x=>x==null?'–':Number(x).toLocaleString();
 async function load(){try{const r=await fetch('data.json?t='+Date.now(),{cache:'no-store'});const d=await r.json();
 fp.textContent=d.flavio_pct+'%';lp.textContent=d.lula_pct+'%';fv.textContent=n(d.flavio_votes)+' votes';lv.textContent=n(d.lula_votes)+' votes';
 fb.style.width=d.flavio_pct+'%';lb.style.width=d.lula_pct+'%';gap.textContent=n(d.gap_votes)+(d.flavio_votes>d.lula_votes?' (Flávio ahead)':' (Lula ahead)');
 pc.textContent=d.pct_counted;win.textContent=d.winner_called===false?'Not called yet':d.winner_called===true?'Called':d.winner_called;
-src.textContent=d.source;st.textContent=d.source_time;up.textContent=new Date(d.updated_at).toLocaleString();notes.textContent=d.notes||'';
+src.textContent=d.source;st.textContent=d.source_time;up.textContent=new Date(d.updated_at).toLocaleString();notes.textContent=d.notes||'';D=d;renderStates();
 }catch(e){}chk.textContent=new Date().toLocaleTimeString();}
 load();setInterval(load,60000);
 </script></body></html>
