@@ -1,0 +1,39 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Brazil Runoff 2026 — Live at a Glance</title>
+<style>
+body{font-family:system-ui,sans-serif;margin:0;background:#0f172a;color:#e2e8f0}
+main{max-width:640px;margin:auto;padding:16px}h1{font-size:1.3rem}
+.card{background:#1e293b;border-radius:12px;padding:14px;margin:12px 0}
+.row{display:flex;justify-content:space-between;align-items:baseline}
+.pct{font-size:2rem;font-weight:700}.f{color:#facc15}.l{color:#f87171}
+.bar{display:flex;height:14px;border-radius:7px;overflow:hidden;margin-top:8px}
+.bar div{height:100%}small,.muted{color:#94a3b8}a{color:#7dd3fc}li{margin:6px 0}
+</style></head><body><main>
+<h1>🇧🇷 Brazil presidential runoff — Oct 25, 2026</h1>
+<div class="card">
+ <div class="row"><span>Flávio Bolsonaro (PL)</span><span class="pct f" id="fp">–</span></div><small id="fv"></small>
+ <div class="row" style="margin-top:10px"><span>Lula (PT)</span><span class="pct l" id="lp">–</span></div><small id="lv"></small>
+ <div class="bar"><div id="fb" style="background:#facc15"></div><div id="lb" style="background:#f87171"></div></div>
+ <p><b>Gap:</b> <span id="gap">–</span> votes</p>
+</div>
+<div class="card"><p><b>Counted:</b> <span id="pc">–</span>% of districts</p><p><b>Winner:</b> <span id="win">–</span></p>
+<p class="muted">Source: <span id="src"></span> (<span id="st"></span>)<br>Snapshot updated: <span id="up"></span><br>Page checked: <span id="chk"></span> · auto-refresh 60s</p><p id="notes" class="muted"></p></div>
+<div class="card"><b>Key facts</b><ul>
+<li>Polls closed two hours late due to a voting extension.</li>
+<li>Extension ordered by STF Justice Cristiano Zanin — nationwide on paper, but only applied where voting machines were still open at 5 PM Brasília time.</li>
+<li>Both campaigns reported transportation problems.</li>
+<li>No published analysis yet on which candidate the extension benefits.</li></ul></div>
+<div class="card"><b>Live sources</b><ul>
+<li><a href="https://resultados.tse.jus.br/oficial/app/index.html">TSE Resultados (official)</a></li>
+<li><a href="https://www.theguardian.com/world/ng-interactive/2026/oct/25/brazil-election-2026-live-second-round-results">The Guardian live results (English)</a></li>
+<li><a href="https://oglobo.globo.com/apuracao-eleicoes-2026/noticia/2026/10/25/apuracao-ao-vivo-resultados-do-2o-turno-das-eleicoes-presidenciais-de-2026.ghtml">O Globo apuração ao vivo (Portuguese)</a></li></ul></div>
+</main><script>
+const n=x=>x==null?'–':Number(x).toLocaleString();
+async function load(){try{const r=await fetch('data.json?t='+Date.now(),{cache:'no-store'});const d=await r.json();
+fp.textContent=d.flavio_pct+'%';lp.textContent=d.lula_pct+'%';fv.textContent=n(d.flavio_votes)+' votes';lv.textContent=n(d.lula_votes)+' votes';
+fb.style.width=d.flavio_pct+'%';lb.style.width=d.lula_pct+'%';gap.textContent=n(d.gap_votes)+(d.flavio_votes>d.lula_votes?' (Flávio ahead)':' (Lula ahead)');
+pc.textContent=d.pct_counted;win.textContent=d.winner_called===false?'Not called yet':d.winner_called===true?'Called':d.winner_called;
+src.textContent=d.source;st.textContent=d.source_time;up.textContent=new Date(d.updated_at).toLocaleString();notes.textContent=d.notes||'';
+}catch(e){}chk.textContent=new Date().toLocaleTimeString();}
+load();setInterval(load,60000);
+</script></body></html>
