@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-10-25T22:55:00Z",
+  "updated_at": "2026-10-25T23:08:00Z",
   "source": "The Guardian live second round results",
-  "source_time": "19:54:37 BRT",
-  "pct_counted": 18.0,
-  "flavio_pct": 50.32,
-  "flavio_votes": 11280634,
-  "lula_pct": 49.68,
-  "lula_votes": 11136146,
-  "gap_votes": 144488,
+  "source_time": "19:58:07 BRT",
+  "pct_counted": 20.8,
+  "flavio_pct": 50.49,
+  "flavio_votes": 12985594,
+  "lula_pct": 49.51,
+  "lula_votes": 12734000,
+  "gap_votes": 251594,
   "winner_called": false,
-  "notes": "Count under way; no winner called. Polls closed two hours late after voting extension."
+  "notes": "Count under way; no winner called. CGN (TSE feed) at 19:58:37 BRT: 21.11% counted, Flávio 50.50% (13,206,953) vs Lula 49.50% (12,943,953). STF says Zanin's extension to 19h applied nationwide but only where polls were still open at 17h."
 }
