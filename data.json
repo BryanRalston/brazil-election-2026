@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-10-25T23:08:00Z",
+  "updated_at": "2026-10-25T23:13:00Z",
   "source": "The Guardian live second round results",
-  "source_time": "19:58:07 BRT",
-  "pct_counted": 20.8,
-  "flavio_pct": 50.49,
-  "flavio_votes": 12985594,
-  "lula_pct": 49.51,
-  "lula_votes": 12734000,
-  "gap_votes": 251594,
+  "source_time": "20:04:48 BRT",
+  "pct_counted": 26.8,
+  "flavio_pct": 50.45,
+  "flavio_votes": 16685128,
+  "lula_pct": 49.55,
+  "lula_votes": 16390329,
+  "gap_votes": 294799,
   "winner_called": false,
-  "notes": "Count under way; no winner called. CGN (TSE feed) at 19:58:37 BRT: 21.11% counted, Flávio 50.50% (13,206,953) vs Lula 49.50% (12,943,953). STF says Zanin's extension to 19h applied nationwide but only where polls were still open at 17h."
+  "notes": "Count under way; no winner called. CGN (TSE feed) at 20:04:18 BRT: 26.3% counted, Flávio 50.46% (16,385,358) vs Lula 49.54% (16,087,378). Zanin's extension to 19h was granted nationwide on Lula's request over transport cuts; some machines had already closed. Bolsonaro allies (Nikolas Ferreira, Rogério Marinho) called it an intervention that 'only helps whoever is losing' (Guardian)."
 }
