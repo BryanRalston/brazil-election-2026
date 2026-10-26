@@ -1,13 +1,13 @@
 {
- "updated_at": "2026-10-26T00:22:28Z",
+ "updated_at": "2026-10-26T00:23:59Z",
  "source": "TSE Resultados (official)",
- "source_time": "25/10/2026 21:21:43 BRT",
- "pct_counted": 99.83,
+ "source_time": "25/10/2026 21:22:35 BRT",
+ "pct_counted": 99.84,
  "flavio_pct": 48.24,
- "flavio_votes": 59759548,
+ "flavio_votes": 59762005,
  "lula_pct": 51.76,
- "lula_votes": 64120476,
- "gap_votes": 4360928,
+ "lula_votes": 64126433,
+ "gap_votes": 4364428,
  "winner_called": false,
  "notes": "Count under way; TSE has not declared a winner. Lead change: Flávio led by 278,020 (34.1% counted), 12,941 (46.5%); Lula took the lead by 190,928 at 51.4% and widened it to 574,941 at 56.8% 1,144,255 at 64.8%, 2,087,773 at 75.9%, 2,887,366 at 83.7%, and 2,975,722 at 84.7%. Still pending: Lula areas BA 75%, SE 49%, CE 87%, PE 89%; Flávio areas RJ 39%, SP 77%, RS 93%; MG 83% (tied). A widely shared SGC article saying Lula won appears pre-scheduled; no major outlet or the TSE has called it. Estadão's statistical projection (reported by Brasil 247) puts Lula at 51.4% vs 48.6% (95% range 51.3–51.8%); it is an estimate, not a TSE result. Extension: STF Justice Zanin granted a request from Lula's coalition (Reclamação 101673, over transit cuts in Salvador, Feira de Santana and Lauro de Freitas) and extended voting two hours nationally; he later clarified it applied only where machines were still open at 17h (TSE note, BBC). AP reports the decision came three minutes before polls closed, reached some stations after they had already shut, paused results until 19h, and sets the stage for possible legal challenges whoever wins. Flávio's campaign had asked for more time in rain-hit towns (G1). Bolsonaro allies called it an intervention that 'only helps whoever is losing' (Guardian); no published vote-impact analysis found. Projection: Folha reports Datafolha projected Lula re-elected for a fourth term (at 76.98% counted, Lula 51.17% vs 48.83%, saying Flávio can no longer catch him); this is a media projection, and the TSE has not yet declared a winner. Gap reached 3,925,648 at 93.8% counted. Bloomberg Línea (21:10 BRT, 98.27% counted) reports Lula re-elected, saying the 4.25M-vote gap can no longer be reversed with remaining sections; the TSE has not yet formally proclaimed the result. Gap 4,361,829 at 99.82% counted.",
  "states": [
@@ -60,15 +60,15 @@
    "uf": "PA",
    "name": "Pará",
    "region": "North",
-   "pct_counted": 99.85,
+   "pct_counted": 99.9,
    "sections_total": 20827,
-   "sections_counted": 20795,
+   "sections_counted": 20806,
    "flavio_pct": 45.0,
-   "flavio_votes": 2197764,
+   "flavio_votes": 2198815,
    "lula_pct": 55.0,
-   "lula_votes": 2685854,
+   "lula_votes": 2687730,
    "elected": [],
-   "source_time": "25/10/2026 21:20:45 local time",
+   "source_time": "25/10/2026 21:21:51 local time",
    "final": false
   },
   {
@@ -105,15 +105,15 @@
    "uf": "TO",
    "name": "Tocantins",
    "region": "North",
-   "pct_counted": 99.36,
+   "pct_counted": 99.7,
    "sections_total": 4384,
-   "sections_counted": 4356,
-   "flavio_pct": 51.33,
-   "flavio_votes": 464282,
-   "lula_pct": 48.67,
-   "lula_votes": 440158,
+   "sections_counted": 4371,
+   "flavio_pct": 51.37,
+   "flavio_votes": 466533,
+   "lula_pct": 48.63,
+   "lula_votes": 441676,
    "elected": [],
-   "source_time": "25/10/2026 21:17:14 local time",
+   "source_time": "25/10/2026 21:21:32 local time",
    "final": false
   },
   {
@@ -135,15 +135,15 @@
    "uf": "BA",
    "name": "Bahia",
    "region": "Northeast",
-   "pct_counted": 99.37,
+   "pct_counted": 99.42,
    "sections_total": 35476,
-   "sections_counted": 35253,
-   "flavio_pct": 28.69,
-   "flavio_votes": 2590063,
-   "lula_pct": 71.31,
-   "lula_votes": 6438214,
+   "sections_counted": 35271,
+   "flavio_pct": 28.68,
+   "flavio_votes": 2590992,
+   "lula_pct": 71.32,
+   "lula_votes": 6442047,
    "elected": [],
-   "source_time": "25/10/2026 21:17:24 local time",
+   "source_time": "25/10/2026 21:22:35 local time",
    "final": false
   },
   {
@@ -195,15 +195,15 @@
    "uf": "PE",
    "name": "Pernambuco",
    "region": "Northeast",
-   "pct_counted": 99.61,
+   "pct_counted": 99.62,
    "sections_total": 21418,
-   "sections_counted": 21334,
+   "sections_counted": 21337,
    "flavio_pct": 30.82,
-   "flavio_votes": 1827036,
+   "flavio_votes": 1827197,
    "lula_pct": 69.18,
-   "lula_votes": 4100808,
+   "lula_votes": 4101328,
    "elected": [],
-   "source_time": "25/10/2026 21:13:34 local time",
+   "source_time": "25/10/2026 21:22:56 local time",
    "final": false
   },
   {
@@ -255,30 +255,30 @@
    "uf": "DF",
    "name": "Distrito Federal",
    "region": "Center-West",
-   "pct_counted": 99.86,
+   "pct_counted": 100.0,
    "sections_total": 6969,
-   "sections_counted": 6959,
-   "flavio_pct": 54.27,
-   "flavio_votes": 977912,
-   "lula_pct": 45.73,
-   "lula_votes": 823980,
+   "sections_counted": 6969,
+   "flavio_pct": 54.28,
+   "flavio_votes": 979542,
+   "lula_pct": 45.72,
+   "lula_votes": 825224,
    "elected": [],
-   "source_time": "25/10/2026 21:21:32 local time",
+   "source_time": "25/10/2026 21:23:12 local time",
    "final": false
   },
   {
    "uf": "GO",
    "name": "Goiás",
    "region": "Center-West",
-   "pct_counted": 99.89,
+   "pct_counted": 99.91,
    "sections_total": 15686,
-   "sections_counted": 15669,
+   "sections_counted": 15672,
    "flavio_pct": 59.67,
-   "flavio_votes": 2343029,
+   "flavio_votes": 2343404,
    "lula_pct": 40.33,
-   "lula_votes": 1583892,
+   "lula_votes": 1584113,
    "elected": [],
-   "source_time": "25/10/2026 21:20:34 local time",
+   "source_time": "25/10/2026 21:21:49 local time",
    "final": false
   },
   {
@@ -332,13 +332,13 @@
    "region": "Southeast",
    "pct_counted": 99.68,
    "sections_total": 52062,
-   "sections_counted": 51893,
+   "sections_counted": 51894,
    "flavio_pct": 49.61,
-   "flavio_votes": 6229789,
+   "flavio_votes": 6229893,
    "lula_pct": 50.39,
-   "lula_votes": 6328380,
+   "lula_votes": 6328581,
    "elected": [],
-   "source_time": "25/10/2026 21:19:30 local time",
+   "source_time": "25/10/2026 21:20:47 local time",
    "final": false
   },
   {
@@ -360,15 +360,15 @@
    "uf": "SP",
    "name": "São Paulo",
    "region": "Southeast",
-   "pct_counted": 99.91,
+   "pct_counted": 99.92,
    "sections_total": 103656,
-   "sections_counted": 103566,
-   "flavio_pct": 53.86,
-   "flavio_votes": 14128942,
-   "lula_pct": 46.14,
-   "lula_votes": 12106142,
+   "sections_counted": 103570,
+   "flavio_pct": 53.85,
+   "flavio_votes": 14129266,
+   "lula_pct": 46.15,
+   "lula_votes": 12106802,
    "elected": [],
-   "source_time": "25/10/2026 21:21:05 local time",
+   "source_time": "25/10/2026 21:21:43 local time",
    "final": false
   },
   {
@@ -377,13 +377,13 @@
    "region": "South",
    "pct_counted": 100.0,
    "sections_total": 27142,
-   "sections_counted": 27141,
+   "sections_counted": 27142,
    "flavio_pct": 62.58,
-   "flavio_votes": 4291431,
+   "flavio_votes": 4291444,
    "lula_pct": 37.42,
-   "lula_votes": 2566481,
+   "lula_votes": 2566504,
    "elected": [],
-   "source_time": "25/10/2026 21:20:10 local time",
+   "source_time": "25/10/2026 21:21:20 local time",
    "final": false
   },
   {
@@ -421,29 +421,29 @@
   {
    "region": "North",
    "states_available": 7,
-   "pct_counted": 99.55,
+   "pct_counted": 99.61,
    "flavio_pct": 50.04,
    "lula_pct": 49.96,
-   "flavio_votes": 5007523,
-   "lula_votes": 4999175
+   "flavio_votes": 5010825,
+   "lula_votes": 5002569
   },
   {
    "region": "Northeast",
    "states_available": 9,
-   "pct_counted": 99.71,
+   "pct_counted": 99.73,
    "flavio_pct": 30.64,
    "lula_pct": 69.36,
-   "flavio_votes": 10767687,
-   "lula_votes": 24370830
+   "flavio_votes": 10768777,
+   "lula_votes": 24375183
   },
   {
    "region": "Center-West",
    "states_available": 4,
-   "pct_counted": 99.91,
+   "pct_counted": 99.94,
    "flavio_pct": 60.02,
    "lula_pct": 39.98,
-   "flavio_votes": 5598922,
-   "lula_votes": 3729860
+   "flavio_votes": 5600927,
+   "lula_votes": 3731325
   },
   {
    "region": "Southeast",
@@ -451,8 +451,8 @@
    "pct_counted": 99.87,
    "flavio_pct": 52.77,
    "lula_pct": 47.23,
-   "flavio_votes": 26821090,
-   "lula_votes": 24001072
+   "flavio_votes": 26821518,
+   "lula_votes": 24001933
   },
   {
    "region": "South",
@@ -460,8 +460,8 @@
    "pct_counted": 100.0,
    "flavio_pct": 62.58,
    "lula_pct": 37.42,
-   "flavio_votes": 11385717,
-   "lula_votes": 6809216
+   "flavio_votes": 11385730,
+   "lula_votes": 6809239
   }
  ],
  "states_source": "TSE Resultados per-UF JSON (ele2026/6258)",
@@ -490,28 +490,18 @@
    "uf": "BA",
    "municipality": "Igrapiúna",
    "metric": "turnout_jump_pts",
-   "value": 15.46,
+   "value": 15.59,
    "baseline": 65.97,
-   "pct_counted": 97.0,
-   "votes_counted": 7097,
+   "pct_counted": 100.0,
+   "votes_counted": 7380,
    "note": "Turnout up ≥15 pts vs 2022 runoff"
-  },
-  {
-   "uf": "SP",
-   "municipality": "Paranapanema",
-   "metric": "flavio_swing_vs_2022_pts",
-   "value": 14.29,
-   "baseline": 0.54,
-   "pct_counted": 31.7,
-   "votes_counted": 4089,
-   "note": "Flávio share 71.1% vs Bolsonaro 56.8% in 2022; state median swing +0.5 pts (deviation 6.4 SD)"
   },
   {
    "uf": "AM",
    "municipality": "Jutaí",
    "metric": "flavio_swing_vs_2022_pts",
    "value": 14.49,
-   "baseline": 1.42,
+   "baseline": 1.4,
    "pct_counted": 100.0,
    "votes_counted": 11404,
    "note": "Flávio share 38.9% vs Bolsonaro 24.4% in 2022; state median swing +1.4 pts (deviation 3.7 SD)"
@@ -521,27 +511,27 @@
    "municipality": "Senador José Porfírio",
    "metric": "flavio_swing_vs_2022_pts",
    "value": 14.51,
-   "baseline": 1.77,
+   "baseline": 1.67,
    "pct_counted": 100.0,
    "votes_counted": 10881,
-   "note": "Flávio share 62.1% vs Bolsonaro 47.6% in 2022; state median swing +1.8 pts (deviation 4.2 SD)"
+   "note": "Flávio share 62.1% vs Bolsonaro 47.6% in 2022; state median swing +1.7 pts (deviation 4.2 SD)"
   },
   {
    "uf": "AL",
    "municipality": "Belo Monte",
    "metric": "flavio_swing_vs_2022_pts",
    "value": 13.07,
-   "baseline": 0.46,
+   "baseline": 0.44,
    "pct_counted": 100.0,
    "votes_counted": 4682,
-   "note": "Flávio share 38.4% vs Bolsonaro 25.3% in 2022; state median swing +0.5 pts (deviation 5.0 SD)"
+   "note": "Flávio share 38.4% vs Bolsonaro 25.3% in 2022; state median swing +0.4 pts (deviation 5.0 SD)"
   },
   {
    "uf": "PR",
    "municipality": "São João Do Triunfo",
    "metric": "flavio_swing_vs_2022_pts",
    "value": 14.48,
-   "baseline": 2.25,
+   "baseline": 2.26,
    "pct_counted": 100.0,
    "votes_counted": 9762,
    "note": "Flávio share 55.1% vs Bolsonaro 40.6% in 2022; state median swing +2.3 pts (deviation 4.5 SD)"
@@ -551,7 +541,7 @@
    "municipality": "Passa Sete",
    "metric": "flavio_swing_vs_2022_pts",
    "value": 15.83,
-   "baseline": 4.4,
+   "baseline": 4.43,
    "pct_counted": 100.0,
    "votes_counted": 3142,
    "note": "Flávio share 65.6% vs Bolsonaro 49.7% in 2022; state median swing +4.4 pts (deviation 3.7 SD)"
@@ -561,7 +551,7 @@
    "municipality": "Herveiras",
    "metric": "flavio_swing_vs_2022_pts",
    "value": 15.64,
-   "baseline": 4.4,
+   "baseline": 4.43,
    "pct_counted": 100.0,
    "votes_counted": 2156,
    "note": "Flávio share 52.7% vs Bolsonaro 37.1% in 2022; state median swing +4.4 pts (deviation 3.6 SD)"
@@ -571,7 +561,7 @@
    "municipality": "Gramado Xavier",
    "metric": "flavio_swing_vs_2022_pts",
    "value": 15.45,
-   "baseline": 4.4,
+   "baseline": 4.43,
    "pct_counted": 100.0,
    "votes_counted": 2477,
    "note": "Flávio share 61.2% vs Bolsonaro 45.8% in 2022; state median swing +4.4 pts (deviation 3.6 SD)"
@@ -581,37 +571,37 @@
    "municipality": "Buerarema",
    "metric": "flavio_swing_vs_2022_pts",
    "value": -7.38,
-   "baseline": 2.69,
+   "baseline": 2.6,
    "pct_counted": 100.0,
    "votes_counted": 10040,
-   "note": "Flávio share 52.3% vs Bolsonaro 59.6% in 2022; state median swing +2.7 pts (deviation -3.7 SD)"
+   "note": "Flávio share 52.3% vs Bolsonaro 59.6% in 2022; state median swing +2.6 pts (deviation -3.9 SD)"
   },
   {
    "uf": "PR",
    "municipality": "Campina Do Simão",
    "metric": "flavio_swing_vs_2022_pts",
    "value": 12.24,
-   "baseline": 2.25,
+   "baseline": 2.26,
    "pct_counted": 100.0,
    "votes_counted": 2956,
    "note": "Flávio share 48.6% vs Bolsonaro 36.4% in 2022; state median swing +2.3 pts (deviation 3.7 SD)"
   },
   {
-   "uf": "BA",
-   "municipality": "Serra Do Ramalho",
+   "uf": "SP",
+   "municipality": "Itapirapuã Paulista",
    "metric": "flavio_swing_vs_2022_pts",
-   "value": -7.13,
-   "baseline": 2.69,
-   "pct_counted": 11.1,
-   "votes_counted": 2054,
-   "note": "Flávio share 15.9% vs Bolsonaro 23.0% in 2022; state median swing +2.7 pts (deviation -3.6 SD)"
+   "value": 10.52,
+   "baseline": 0.56,
+   "pct_counted": 90.0,
+   "votes_counted": 2471,
+   "note": "Flávio share 54.0% vs Bolsonaro 43.5% in 2022; state median swing +0.6 pts (deviation 4.7 SD)"
   },
   {
    "uf": "RS",
    "municipality": "Barros Cassal",
    "metric": "flavio_swing_vs_2022_pts",
    "value": 14.21,
-   "baseline": 4.4,
+   "baseline": 4.43,
    "pct_counted": 100.0,
    "votes_counted": 6547,
    "note": "Flávio share 60.3% vs Bolsonaro 46.1% in 2022; state median swing +4.4 pts (deviation 3.2 SD)"
@@ -621,17 +611,17 @@
    "municipality": "São Julião",
    "metric": "flavio_swing_vs_2022_pts",
    "value": -7.22,
-   "baseline": 2.28,
+   "baseline": 2.24,
    "pct_counted": 100.0,
    "votes_counted": 4515,
-   "note": "Flávio share 22.8% vs Bolsonaro 30.0% in 2022; state median swing +2.3 pts (deviation -4.1 SD)"
+   "note": "Flávio share 22.8% vs Bolsonaro 30.0% in 2022; state median swing +2.2 pts (deviation -4.2 SD)"
   },
   {
    "uf": "PR",
    "municipality": "Paulo Frontin",
    "metric": "flavio_swing_vs_2022_pts",
    "value": 11.25,
-   "baseline": 2.25,
+   "baseline": 2.26,
    "pct_counted": 100.0,
    "votes_counted": 4812,
    "note": "Flávio share 70.1% vs Bolsonaro 58.8% in 2022; state median swing +2.3 pts (deviation 3.3 SD)"
@@ -641,78 +631,88 @@
    "municipality": "Mato Rico",
    "metric": "flavio_swing_vs_2022_pts",
    "value": 11.11,
-   "baseline": 2.25,
+   "baseline": 2.26,
    "pct_counted": 100.0,
    "votes_counted": 2630,
-   "note": "Flávio share 48.6% vs Bolsonaro 37.5% in 2022; state median swing +2.3 pts (deviation 3.2 SD)"
-  },
-  {
-   "uf": "RN",
-   "municipality": "Rodolfo Fernandes",
-   "metric": "flavio_swing_vs_2022_pts",
-   "value": 9.76,
-   "baseline": 0.99,
-   "pct_counted": 100.0,
-   "votes_counted": 3869,
-   "note": "Flávio share 28.9% vs Bolsonaro 19.2% in 2022; state median swing +1.0 pts (deviation 4.0 SD)"
+   "note": "Flávio share 48.6% vs Bolsonaro 37.5% in 2022; state median swing +2.3 pts (deviation 3.3 SD)"
   },
   {
    "uf": "PI",
    "municipality": "Pedro Laurentino",
    "metric": "flavio_swing_vs_2022_pts",
    "value": -6.45,
-   "baseline": 2.28,
+   "baseline": 2.24,
    "pct_counted": 100.0,
    "votes_counted": 2639,
-   "note": "Flávio share 23.3% vs Bolsonaro 29.8% in 2022; state median swing +2.3 pts (deviation -3.8 SD)"
+   "note": "Flávio share 23.3% vs Bolsonaro 29.8% in 2022; state median swing +2.2 pts (deviation -3.8 SD)"
   },
   {
-   "uf": "BA",
-   "municipality": "Pau Brasil",
+   "uf": "RN",
+   "municipality": "Rodolfo Fernandes",
    "metric": "flavio_swing_vs_2022_pts",
-   "value": -6.01,
-   "baseline": 2.69,
+   "value": 9.76,
+   "baseline": 1.09,
    "pct_counted": 100.0,
-   "votes_counted": 6260,
-   "note": "Flávio share 35.6% vs Bolsonaro 41.6% in 2022; state median swing +2.7 pts (deviation -3.2 SD)"
+   "votes_counted": 3869,
+   "note": "Flávio share 28.9% vs Bolsonaro 19.2% in 2022; state median swing +1.1 pts (deviation 4.0 SD)"
   },
   {
    "uf": "PB",
    "municipality": "Mato Grosso",
    "metric": "flavio_swing_vs_2022_pts",
    "value": 10.12,
-   "baseline": 1.46,
+   "baseline": 1.49,
    "pct_counted": 100.0,
    "votes_counted": 2267,
    "note": "Flávio share 19.6% vs Bolsonaro 9.5% in 2022; state median swing +1.5 pts (deviation 4.4 SD)"
+  },
+  {
+   "uf": "BA",
+   "municipality": "Pau Brasil",
+   "metric": "flavio_swing_vs_2022_pts",
+   "value": -6.01,
+   "baseline": 2.6,
+   "pct_counted": 100.0,
+   "votes_counted": 6260,
+   "note": "Flávio share 35.6% vs Bolsonaro 41.6% in 2022; state median swing +2.6 pts (deviation -3.3 SD)"
+  },
+  {
+   "uf": "BA",
+   "municipality": "Itaju Do Colônia",
+   "metric": "flavio_swing_vs_2022_pts",
+   "value": -5.9,
+   "baseline": 2.6,
+   "pct_counted": 100.0,
+   "votes_counted": 4570,
+   "note": "Flávio share 35.2% vs Bolsonaro 41.1% in 2022; state median swing +2.6 pts (deviation -3.3 SD)"
   },
   {
    "uf": "SP",
    "municipality": "Barra Do Chapéu",
    "metric": "flavio_swing_vs_2022_pts",
    "value": 8.92,
-   "baseline": 0.54,
+   "baseline": 0.56,
    "pct_counted": 100.0,
    "votes_counted": 3676,
-   "note": "Flávio share 58.8% vs Bolsonaro 49.8% in 2022; state median swing +0.5 pts (deviation 3.9 SD)"
+   "note": "Flávio share 58.8% vs Bolsonaro 49.8% in 2022; state median swing +0.6 pts (deviation 3.9 SD)"
   },
   {
    "uf": "SC",
    "municipality": "Major Vieira",
    "metric": "flavio_swing_vs_2022_pts",
    "value": 10.55,
-   "baseline": 2.26,
+   "baseline": 2.29,
    "pct_counted": 100.0,
    "votes_counted": 5115,
-   "note": "Flávio share 69.4% vs Bolsonaro 58.9% in 2022; state median swing +2.3 pts (deviation 3.0 SD)"
+   "note": "Flávio share 69.4% vs Bolsonaro 58.9% in 2022; state median swing +2.3 pts (deviation 3.1 SD)"
   }
  ],
  "anomaly_summary": {
-  "checked_at": "2026-10-26T00:05:32Z",
-  "municipalities_fetched": 5564,
-  "municipalities_with_counted_sections": 5402,
+  "checked_at": "2026-10-26T00:24:34Z",
+  "municipalities_fetched": 5571,
+  "municipalities_with_counted_sections": 5563,
   "municipalities_total": 5571,
-  "with_2022_baseline": 5401,
+  "with_2022_baseline": 5562,
   "flags_total": 24,
   "flags_by_metric": {
    "turnout_jump_pts": 3,
@@ -988,6 +988,20 @@
    "batch_lula_votes": 9124,
    "batch_flavio_votes": 10025,
    "batch_lula_share": 47.65
+  },
+  {
+   "time_brt": "25/10/2026 21:22:35 BRT",
+   "source": "TSE Resultados (official)",
+   "pct_counted": 99.84,
+   "lula_votes": 64126433,
+   "flavio_votes": 59762005,
+   "lula_pct": 51.76,
+   "flavio_pct": 48.24,
+   "gap": -4364428,
+   "batch_votes": 8414,
+   "batch_lula_votes": 5957,
+   "batch_flavio_votes": 2457,
+   "batch_lula_share": 70.8
   }
  ]
 }
