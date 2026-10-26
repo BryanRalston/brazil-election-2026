@@ -21,6 +21,9 @@ table{width:100%;border-collapse:collapse;font-size:.88rem}th,td{padding:5px 4px
 <p class="muted">Source: <span id="src"></span> (<span id="st"></span>)<br>Snapshot updated: <span id="up"></span><br>Page checked: <span id="chk"></span> · auto-refresh 60s</p><p id="notes" class="muted"></p></div>
 <div class="card"><b>By region</b><div class="scroll"><table id="rt"><thead><tr><th>Region</th><th>% counted</th><th>Flávio</th><th>Lula</th></tr></thead><tbody></tbody></table></div></div>
 <div class="card"><b>By state</b> <small>(tap a header to sort)</small><div class="scroll"><table id="stt"><thead><tr><th data-k="name">State</th><th data-k="pct_counted">% counted</th><th data-k="flavio_pct">Flávio</th><th data-k="lula_pct">Lula</th></tr></thead><tbody></tbody></table></div><small id="ssrc" class="muted"></small></div>
+<div class="card"><b>Unusual local results (statistical screen, not evidence of fraud)</b>
+<p class="muted" style="font-size:.85rem">Method: every municipality's official 2026 TSE count is compared with the same municipality's 2022 runoff result (TSE open data). Flags: turnout ≥95% of registered voters, or up ≥15 pts vs 2022; Flávio's share swing vs Bolsonaro 2022 that deviates ≥3 standard deviations (and ≥8 pts) or ≥25 pts from the state's median swing (≥2,000 valid votes); either candidate ≥97% of valid votes (≥1,000 votes); blank+null share up ≥10 pts. Partial counts can be unrepresentative, and small or remote municipalities have historically shown extreme margins and turnout swings naturally (local politics, a few large families, polling-site changes). A flag means "worth a look", nothing more.</p>
+<p id="asum" class="muted"></p><div class="scroll"><table id="at"><thead><tr><th>Place</th><th>Metric</th><th>Now</th><th>Baseline</th><th>% counted</th></tr></thead><tbody></tbody></table></div></div>
 <div class="card"><b>Key facts</b><ul>
 <li>Polls closed two hours late due to a voting extension.</li>
 <li>Extension ordered by STF Justice Cristiano Zanin — nationwide on paper, but only applied where voting machines were still open at 5 PM Brasília time.</li>
@@ -32,6 +35,10 @@ table{width:100%;border-collapse:collapse;font-size:.88rem}th,td{padding:5px 4px
 <li><a href="https://oglobo.globo.com/apuracao-eleicoes-2026/noticia/2026/10/25/apuracao-ao-vivo-resultados-do-2o-turno-das-eleicoes-presidenciais-de-2026.ghtml">O Globo apuração ao vivo (Portuguese)</a></li></ul></div>
 </main><script>
 
+function renderAnoms(){if(!D)return;const s=D.anomaly_summary;if(!s){asum.textContent='Screen not run yet.';return}
+asum.textContent=`${s.flags_total} flag(s) across ${s.municipalities_with_counted_sections} municipalities with counted sections (of ${s.municipalities_total}); checked ${new Date(s.checked_at).toLocaleTimeString()}.`;
+const L={turnout_pct:'Turnout %',turnout_jump_pts:'Turnout jump (pts)',flavio_swing_vs_2022_pts:'Flávio swing vs 2022 (pts; baseline = state median)',flávio_share_pct:'Flávio share %',lula_share_pct:'Lula share %',blank_null_pct:'Blank+null %'};
+document.querySelector('#at tbody').innerHTML=(D.anomalies||[]).map(a=>`<tr title="${a.note}"><td>${a.municipality} (${a.uf})</td><td>${L[a.metric]||a.metric}</td><td>${a.value}</td><td>${a.baseline??'–'}</td><td>${a.pct_counted}%</td></tr>`).join('')||'<tr><td colspan=5 class="muted">No flags</td></tr>'}
 let D=null,sk=null,sd=1;const R=["North","Northeast","Center-West","Southeast","South"];
 const p=x=>x==null?'n/a':x.toFixed(2)+'%';
 const cell=(a,b,k)=>`<td class="${a!=null&&b!=null&&(k=='f'?a>b:b>a)?(k=='f'?'wf':'wl'):''}">${p(k=='f'?a:b)}</td>`;
@@ -47,7 +54,7 @@ async function load(){try{const r=await fetch('data.json?t='+Date.now(),{cache:'
 fp.textContent=d.flavio_pct+'%';lp.textContent=d.lula_pct+'%';fv.textContent=n(d.flavio_votes)+' votes';lv.textContent=n(d.lula_votes)+' votes';
 fb.style.width=d.flavio_pct+'%';lb.style.width=d.lula_pct+'%';gap.textContent=n(d.gap_votes)+(d.flavio_votes>d.lula_votes?' (Flávio ahead)':' (Lula ahead)');
 pc.textContent=d.pct_counted;win.textContent=d.winner_called===false?'Not called yet':d.winner_called===true?'Called':d.winner_called;
-src.textContent=d.source;st.textContent=d.source_time;up.textContent=new Date(d.updated_at).toLocaleString();notes.textContent=d.notes||'';D=d;renderStates();
+src.textContent=d.source;st.textContent=d.source_time;up.textContent=new Date(d.updated_at).toLocaleString();notes.textContent=d.notes||'';D=d;renderStates();renderAnoms();
 }catch(e){}chk.textContent=new Date().toLocaleTimeString();}
 load();setInterval(load,60000);
 </script></body></html>
