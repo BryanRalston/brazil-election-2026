@@ -8,7 +8,7 @@ R = "https://resultados.tse.jus.br/oficial/ele2026/6258"
 f = lambda s: float(str(s).replace(",", "."))
 def get(url):
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
-    return json.load(urllib.request.urlopen(req, timeout=20))
+    return json.load(urllib.request.urlopen(req, timeout=8))
 
 def muni(uf, cd):
     try:
@@ -30,7 +30,7 @@ def main():
     cfg = get(f"{R}/config/mun-e006258-cm.json")
     jobs = [(a["cd"], m["cd"], m["nm"]) for a in cfg["abr"] if a["cd"] != "zz" for m in a["mu"]]
     names = {cd: (uf, nm) for uf, cd, nm in jobs}
-    with cf.ThreadPoolExecutor(64) as ex:
+    with cf.ThreadPoolExecutor(16) as ex:
         res = [r for r in ex.map(lambda j: muni(j[0], j[1]), jobs) if r]
     flags, swings = [], collections.defaultdict(list)
     rows = []
