@@ -47,6 +47,7 @@ def main():
         if br["elected"]: data["winner_called"] = ("Flávio Bolsonaro" if br["elected"] == ["flavio"] else "Lula") + " elected (TSE)"
     data.update({"states": states, "regions": regions, "states_source": "TSE Resultados per-UF JSON (ele2026/6258)",
                  "updated_at": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")})
+    from history_lib import append; append(data)
     json.dump(data, open(path, "w"), ensure_ascii=False, indent=1)
     print(f'BR {data["pct_counted"]}% counted | Flávio {data["flavio_pct"]} | Lula {data["lula_pct"]} | states ok {sum(1 for s in states if not s.get("unavailable"))}/27')
 
